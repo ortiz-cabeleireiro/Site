@@ -1,0 +1,344 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <!-- =========================================================
+       META / SEO BÁSICO
+  ========================================================== -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Ortiz Cabeleireiro | Corte masculino tradicional e rápido</title>
+  <meta name="description" content="Ortiz Cabeleireiro em São José dos Pinhais - PR. Atendimento por ordem de chegada. Corte masculino tradicional e rápido. Corte Masculino R$ 20,00." />
+  <meta name="robots" content="index,follow,max-image-preview:large" />
+  <link rel="canonical" href="https://SEU-DOMINIO-AQUI.com/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="business.business" />
+  <meta property="og:title" content="Ortiz Cabeleireiro" />
+  <meta property="og:description" content="Atendimento por ordem de chegada. Corte masculino tradicional e rápido. Corte Masculino R$ 20,00." />
+  <meta property="og:url" content="https://SEU-DOMINIO-AQUI.com/" />
+  <meta property="og:image" content="hero.jpeg" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Ortiz Cabeleireiro" />
+  <meta name="twitter:description" content="Atendimento por ordem de chegada. Corte masculino tradicional e rápido. Corte Masculino R$ 20,00." />
+  <meta name="twitter:image" content="hero.jpeg" />
+
+  <!-- =========================================================
+       FONTS (Google Fonts) + ÍCONES (Font Awesome via CDN)
+  ========================================================== -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" referrerpolicy="no-referrer">
+
+  <!-- CSS do projeto -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- =========================================================
+       DADOS ESTRUTURADOS (JSON-LD) - LocalBusiness / BarberShop
+  ========================================================== -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BarberShop",
+    "name": "Ortiz Cabeleireiro",
+    "priceRange": "R$",
+    "areaServed": "São José dos Pinhais - PR",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Rua Const. Moro Sobrinho, 1132",
+      "addressLocality": "São José dos Pinhais",
+      "addressRegion": "PR",
+      "addressCountry": "BR"
+    },
+    "openingHours": "Tu-Sa 09:00-18:00"
+  }
+  </script>
+</head>
+
+<body>
+  <!-- =========================================================
+       HEADER / HERO (imagem + overlay + logo + textos + preço)
+       * Visual mobile-first e centralizado, como no mockup.
+  ========================================================== -->
+  <header class="hero" id="topo" aria-label="Capa Ortiz Cabeleireiro">
+    <!--
+      O fundo usa hero.jpg (local). Se não existir, o CSS aplica um gradiente escuro.
+      A sobreposição (overlay) garante legibilidade do texto.
+    -->
+    <div class="hero__overlay" aria-hidden="true"></div>
+
+    <div class="container hero__content">
+      
+      <!-- Títulos -->
+      <h1 class="hero__title">ORTIZ</h1>
+
+      <!-- Subtítulo com decoração (pontos/traços) -->
+      <p class="hero__subtitle">
+        <span class="decor" aria-hidden="true"></span>
+        <span class="hero__subtitleText">CABELeireiro</span>
+        <span class="decor" aria-hidden="true"></span>
+      </p>
+
+      <!-- Texto curto (exatamente como pedido) -->
+      <p class="hero__lead">ORTIZ CABELEIREIRO</p>
+<div class="heroNotice" role="note" aria-label="Informações importantes">
+  <p class="heroNotice__line">Atendimento por ordem de chegada</p>
+</div>
+
+
+      <!-- Card de preço (destaque) -->
+      <div class="priceCard" role="group" aria-label="Preço do corte masculino">
+        <div class="priceCard__kicker">CORTE MASCULINO tradicional e rápido apenas:</div>
+        <div class="priceCard__value">R$ 20,00</div>
+      </div>
+
+      <!-- CTA principal (WhatsApp) + secundário (Maps) -->
+      <div class="hero__actions" aria-label="Ações principais">
+        <a class="btn btn--primary"
+           href="https://wa.me/5541997500797?text=Vim%20pelo%20site%20e%20quero%20mais%20informa%C3%A7%C3%B5es"
+           target="_blank" rel="noopener"
+           aria-label="Falar no WhatsApp">
+          <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+          Falar no WhatsApp
+        </a>
+
+        <a class="btn btn--ghost"
+           href="https://www.google.com/maps/search/?api=1&query=Rua%20Const.%20Moro%20Sobrinho%2C%201132%2C%20Col%C3%B4nia%20Murici%2C%20S%C3%A3o%20Jos%C3%A9%20dos%20Pinhais%20-%20PR"
+           target="_blank" rel="noopener"
+           aria-label="Abrir rotas no Google Maps">
+          <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+          Como Chegar
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- =========================================================
+         SERVIÇOS (4 cards quadrados, fundo branco, ícones azuis)
+    ========================================================== -->
+    <section class="section services" id="servicos" aria-label="Serviços">
+      <div class="container">
+        <h2 class="section__title">SERVIÇOS</h2>
+
+        <div class="services__grid" role="list" aria-label="Lista de serviços">
+          <!-- Card 1 -->
+          <article class="serviceCard" role="listitem" aria-label="Corte Masculino">
+            <div class="serviceCard__icon" aria-hidden="true">
+              <i class="fa-solid fa-scissors"></i>
+            </div>
+            <h3 class="serviceCard__title">Corte Masculino</h3>
+          </article>
+
+          <!-- Card 2 -->
+          <article class="serviceCard" role="listitem" aria-label="Barba">
+            <div class="serviceCard__icon" aria-hidden="true">
+             <div class="serviceCard__icon" aria-hidden="true">
+  <svg class="icon-svg" viewBox="0 0 64 64">
+    <!-- Cabelo -->
+    <path d="M16 24c0-10 8-16 16-16s16 6 16 16v4H16z"/>
+    <!-- Barba -->
+    <path d="M20 36c0 10 8 18 12 18s12-8 12-18l-4 2-8 4-8-4z"/>
+    <!-- Bigode -->
+    <path d="M24 34c2 2 6 2 8 0 2 2 6 2 8 0"/>
+  </svg>
+</div>
+            </div>
+            <h3 class="serviceCard__title">Barba</h3>
+          </article>
+
+          <!-- Card 3 -->
+          <article class="serviceCard" role="listitem" aria-label="Corte Infantil">
+            <div class="serviceCard__icon" aria-hidden="true">
+              <i class="fa-solid fa-child"></i>
+            </div>
+            <h3 class="serviceCard__title">Corte Infantil</h3>
+          </article>
+
+          <!-- Card 4 -->
+          <article class="serviceCard" role="listitem" aria-label="Acabamento na Máquina">
+            <div class="serviceCard__icon" aria-hidden="true">
+              <div class="serviceCard__icon" aria-hidden="true">
+  <svg class="icon-svg" viewBox="0 0 64 64">
+    <!-- Lâmina -->
+    <path d="M8 28h36l6-6H14z"/>
+    <!-- Cabo -->
+    <path d="M38 30l18 18-4 4-18-18z"/>
+    <!-- Pino -->
+    <circle cx="36" cy="32" r="2"/>
+  </svg>
+</div>
+            </div>
+            <h3 class="serviceCard__title">Acabamento na Navalha</h3>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         HORÁRIO (ícone + textos à esquerda) + CARTÃO DE ENDEREÇO
+         * Seção com fundo/estética similar ao mockup
+    ========================================================== -->
+    <section class="section infoBand" id="horario" aria-label="Horário de atendimento e endereço">
+      <div class="container infoBand__grid">
+        <!-- Coluna esquerda: horário -->
+        <div class="infoBlock" aria-label="Horário de atendimento">
+          <div class="infoBlock__icon" aria-hidden="true">
+            <i class="fa-regular fa-clock"></i>
+          </div>
+
+          <div class="infoBlock__text">
+            <h2 class="section__title section__title--invert">HORÁRIO DE ATENDIMENTO</h2>
+            <p class="infoLine">De terça a sábado</p>
+            <p class="infoLine">Das 09h às 18h</p>
+            <p class="infoLine infoLine--muted">Atendimento por ordem de chegada</p>
+          </div>
+        </div>
+
+        <!-- Coluna direita: cartão estilo “caixa sobre fundo” -->
+        <aside class="addressCard addressCard--floating" aria-label="Endereço Ortiz Cabeleireiro">
+          <div class="addressCard__pin" aria-hidden="true">
+            <i class="fa-solid fa-location-dot"></i>
+          </div>
+
+          <div class="addressCard__body">
+            <p class="addressCard__line"><strong>Rua Const. Moro Sobrinho, 1132</strong></p>
+            <p class="addressCard__line">Colônia Murici</p>
+            <p class="addressCard__line">São José dos Pinhais - PR</p>
+
+            <!-- Ação opcional (discreta): copiar endereço -->
+            <button class="addressCard__copy" type="button" data-copy-address aria-label="Copiar endereço">
+              <i class="fa-regular fa-copy" aria-hidden="true"></i>
+              Copiar endereço
+            </button>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         LOCALIZAÇÃO (título + cartão grande + mapa embed)
+    ========================================================== -->
+    <section class="section location" id="localizacao" aria-label="Localização">
+      <div class="container">
+        <h2 class="section__title">LOCALIZAÇÃO</h2>
+
+        <div class="location__stack">
+          <!-- Cartão grande do endereço (como no mockup) -->
+          <div class="addressCard addressCard--large" aria-label="Endereço completo">
+            <div class="addressCard__pin" aria-hidden="true">
+              <i class="fa-solid fa-location-dot"></i>
+            </div>
+            <div class="addressCard__body">
+              <p class="addressCard__line"><strong>Rua Const. Moro Sobrinho, 1132</strong></p>
+              <p class="addressCard__line">Colônia Murici</p>
+              <p class="addressCard__line">São José dos Pinhais - PR</p>
+            </div>
+          </div>
+
+          <!-- Mapa embed sem API key -->
+          <div class="mapCard" aria-label="Mapa do Google">
+            <iframe
+              title="Mapa Ortiz Cabeleireiro"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              src="https://www.google.com/maps?q=Rua%20Const.%20Moro%20Sobrinho%2C%201132%2C%20Col%C3%B4nia%20Murici%2C%20S%C3%A3o%20Jos%C3%A9%20dos%20Pinhais%20-%20PR&output=embed">
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         CONTATO (somente texto + botões; sem formulário)
+    ========================================================== -->
+    <section class="section contact" id="contato" aria-label="Contato">
+      <div class="container">
+        <h2 class="section__title section__title--invert">CONTATO</h2>
+        <p class="contact__lead">Dúvidas, informações e valores</p>
+
+        <div class="contact__actions" aria-label="Botões de contato">
+          <a class="btn btn--primary btn--wide"
+             href="https://wa.me/5541999999999?text=Vim%20pelo%20site%20e%20quero%20mais%20informa%C3%A7%C3%B5es"
+             target="_blank" rel="noopener"
+             aria-label="Falar no WhatsApp">
+            <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+            Falar no WhatsApp
+          </a>
+
+          <a class="btn btn--ghost btn--wide"
+             href="https://www.google.com/maps/search/?api=1&query=Rua%20Const.%20Moro%20Sobrinho%2C%201132%2C%20Col%C3%B4nia%20Murici%2C%20S%C3%A3o%20Jos%C3%A9%20dos%20Pinhais%20-%20PR"
+             target="_blank" rel="noopener"
+             aria-label="Abrir no Google Maps">
+            <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+            Como Chegar
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- =========================================================
+       FOOTER (simples)
+  ========================================================== -->
+  <footer class="footer" aria-label="Rodapé">
+    <div class="container footer__inner">
+      <p class="footer__text">© <span id="year"></span> Ortiz Cabeleireiro. Todos os direitos reservados.</p>
+      <a class="footer__link" href="#topo" aria-label="Voltar ao topo">Voltar ao topo</a>
+    </div>
+  </footer>
+
+  <!-- =========================================================
+       JS (apenas o necessário)
+       - Scroll suave para âncoras
+       - Copiar endereço (discreto)
+  ========================================================== -->
+  <script>
+    // Ano automático no footer
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Scroll suave (se houver links internos)
+    document.addEventListener('click', (e) => {
+      const a = e.target.closest('a[href^="#"]');
+      if (!a) return;
+
+      const id = a.getAttribute('href');
+      const el = document.querySelector(id);
+      if (!el) return;
+
+      e.preventDefault();
+      el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
+
+    // Copiar endereço (opcional e discreto)
+    const addressText = "Rua Const. Moro Sobrinho, 1132, Colônia Murici, São José dos Pinhais - PR";
+    const copyBtn = document.querySelector('[data-copy-address]');
+
+    if (copyBtn && navigator.clipboard) {
+      copyBtn.addEventListener('click', async () => {
+        try {
+          await navigator.clipboard.writeText(addressText);
+          const original = copyBtn.innerHTML;
+          copyBtn.innerHTML = '<i class="fa-solid fa-check" aria-hidden="true"></i> Copiado!';
+          copyBtn.classList.add('isCopied');
+          setTimeout(() => {
+            copyBtn.innerHTML = original;
+            copyBtn.classList.remove('isCopied');
+          }, 1600);
+        } catch (err) {
+          // Se falhar, não interrompe a experiência
+          console.warn('Falha ao copiar endereço:', err);
+        }
+      });
+    } else if (copyBtn) {
+      // Se clipboard não estiver disponível, escondemos o botão para não “quebrar” o mockup
+      copyBtn.style.display = 'none';
+    }
+  </script>
+</body>
+</html>
