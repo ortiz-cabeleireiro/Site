@@ -80,7 +80,7 @@
       <!-- Subtítulo com decoração (pontos/traços) -->
       <p class="hero__subtitle">
         <span class="decor" aria-hidden="true"></span>
-        <span class="hero__subtitleText">CABELeireiro</span>
+        <span class="hero__subtitleText">CabeLeireiro</span>
         <span class="decor" aria-hidden="true"></span>
       </p>
 
@@ -180,6 +180,42 @@
       </div>
     </section>
 
+   <section class="servico-especial">
+  <div class="container especial-flex">
+    
+    <!-- TEXTO -->
+    <div class="especial-texto">
+      <h2>💈 Corte Especial</h2>
+      
+      <p class="info">
+        Toda última segunda do mês
+      </p>
+      
+      <p class="detalhe">
+        Corte somente na máquina + pezinho
+      </p>
+
+      <div class="preco">
+        R$ 10,00
+      </div>
+
+      <p class="inicio">
+        Iniciando em abril de 2026 - 1° dia será 27/04/26 das 09h as 17h.
+      </p>
+
+      <p class="obs">
+        Nesse dia serão atentidos somente clientes para esse tipo de corte especial.
+      </p>
+    </div>
+
+    <!-- IMAGEM -->
+    <div class="especial-imagem">
+      <img src="corte-maquina.jpeg" alt="Corte de cabelo com máquina">
+    </div>
+
+  </div>
+</section>
+
     <!-- =========================================================
          HORÁRIO (ícone + textos à esquerda) + CARTÃO DE ENDEREÇO
          * Seção com fundo/estética similar ao mockup
@@ -264,7 +300,7 @@
 
         <div class="contact__actions" aria-label="Botões de contato">
           <a class="btn btn--primary btn--wide"
-             href="https://wa.me/5541999999999?text=Vim%20pelo%20site%20e%20quero%20mais%20informa%C3%A7%C3%B5es"
+             href="https://wa.me/5541997500797?text=Vim%20pelo%20site%20e%20quero%20mais%20informa%C3%A7%C3%B5es"
              target="_blank" rel="noopener"
              aria-label="Falar no WhatsApp">
             <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
@@ -340,5 +376,38 @@
       copyBtn.style.display = 'none';
     }
   </script>
+
+  <!-- POPUP NOVIDADE -->
+<div id="popupNovidade" class="popup-overlay" aria-hidden="true">
+  <div class="popup-box" role="dialog" aria-modal="true" aria-labelledby="popupTitulo">
+    <button class="popup-close" id="fecharPopup" aria-label="Fechar aviso">×</button>
+
+    <div class="popup-content">
+      <div class="popup-texto">
+        <span class="popup-tag">Novidade no Ortiz</span>
+        <h2 id="popupTitulo">💈 Corte Especial</h2>
+
+        <p class="popup-info">Toda última segunda do mês</p>
+        <p class="popup-detalhe">Corte somente na máquina + pezinho</p>
+
+        <div class="popup-preco">R$ 10,00</div>
+
+        <p class="popup-inicio">Iniciando em abril de 2026 - 1° dia será 27/04/26 das 09h as 17h.</p>
+        <p class="popup-obs">Nesse dia serão atentidos somente clientes para esse tipo de corte especial.</p>
+
+        <div class="popup-acoes">
+          <button class="popup-btn-fechar" id="fecharPopupBtn">Fechar</button>
+        </div>
+      </div>
+
+      <div class="popup-imagem">
+        <img src="corte-maquina.jpeg" alt="Ortiz realizando corte com máquina">
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+
 </body>
 </html>

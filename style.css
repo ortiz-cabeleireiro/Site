@@ -332,6 +332,360 @@ a{ color:inherit; text-decoration:none; }
   fill: var(--icon-blue);
 }
 
+.servico-especial {
+  background: linear-gradient(135deg, #0d2b45, #000);
+  color: #fff;
+  text-align: center;
+  padding: 50px 20px;
+  margin-top: 40px;
+}
+
+.servico-especial h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.servico-especial .info {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.servico-especial .detalhe {
+  font-size: 16px;
+  opacity: 0.9;
+  margin-bottom: 20px;
+}
+
+.servico-especial .preco {
+  font-size: 48px;
+  font-weight: bold;
+  color: #00ff88;
+  margin: 15px 0;
+}
+
+.servico-especial .inicio {
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.servico-especial .obs {
+  font-size: 13px;
+  opacity: 0.7;
+  margin-top: 10px;
+}
+
+.especial-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.especial-texto {
+  max-width: 400px;
+}
+
+.especial-imagem img {
+  width: 100%;
+  max-width: 350px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+}
+
+/* =========================
+   POPUP NOVIDADE
+========================= */
+/* =========================
+   POPUP NOVIDADE
+========================= */
+.popup-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.78);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  z-index: 9999;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.25s ease, visibility 0.25s ease;
+}
+
+.popup-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.popup-box {
+  position: relative;
+  width: 100%;
+  max-width: 980px;
+  max-height: 92vh;
+  overflow: auto;
+  border-radius: 22px;
+  background: linear-gradient(135deg, #041f35, #010b14);
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.45);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.popup-close {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 42px;
+  height: 42px;
+  border: none;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.14);
+  color: #fff;
+  font-size: 28px;
+  line-height: 1;
+  cursor: pointer;
+  z-index: 5;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.popup-close:hover {
+  background: rgba(255, 255, 255, 0.22);
+  transform: scale(1.05);
+}
+
+.popup-content {
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  align-items: stretch;
+}
+
+.popup-texto {
+  padding: 52px 42px 38px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.popup-tag {
+  display: inline-block;
+  align-self: flex-start;
+  margin-bottom: 16px;
+  padding: 8px 14px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.12);
+  color: #d8e8f7;
+  font-size: 0.92rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.popup-texto h2 {
+  margin: 0 0 18px;
+  font-size: clamp(1.9rem, 3vw, 3rem);
+  line-height: 1.05;
+  color: #ffffff;
+}
+
+.popup-info {
+  margin: 0 0 10px;
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.popup-detalhe {
+  margin: 0 0 22px;
+  font-size: 1.08rem;
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.86);
+}
+
+.popup-preco {
+  margin: 0 0 16px;
+  font-size: clamp(3rem, 6vw, 5rem);
+  font-weight: 900;
+  line-height: 1;
+  color: #00ff9d;
+  text-shadow: 0 0 20px rgba(0, 255, 157, 0.16);
+}
+
+.popup-inicio {
+  margin: 0 0 10px;
+  font-size: 1.08rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.popup-obs {
+  margin: 0;
+  font-size: 0.98rem;
+  line-height: 1.45;
+  color: rgba(255, 255, 255, 0.72);
+}
+
+.popup-acoes {
+  margin-top: 24px;
+}
+
+.popup-btn-fechar {
+  padding: 14px 22px;
+  border: none;
+  border-radius: 14px;
+  background: #ffffff;
+  color: #062743;
+  font-size: 1rem;
+  font-weight: 800;
+  cursor: pointer;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.popup-btn-fechar:hover {
+  transform: translateY(-1px);
+  opacity: 0.95;
+}
+
+.popup-imagem {
+  min-height: 100%;
+}
+
+.popup-imagem img {
+  width: 100%;
+  height: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* TABLET */
+@media (max-width: 860px) {
+  .popup-box {
+    max-width: 680px;
+    max-height: 94vh;
+  }
+
+  .popup-content {
+    grid-template-columns: 1fr;
+  }
+
+  .popup-texto {
+    order: 2;
+    padding: 28px 22px 24px;
+    text-align: center;
+  }
+
+  .popup-tag {
+    align-self: center;
+  }
+
+  .popup-imagem {
+    order: 1;
+    min-height: auto;
+  }
+
+  .popup-imagem img {
+    height: 260px;
+    min-height: unset;
+    object-position: center top;
+  }
+
+  .popup-texto h2 {
+    font-size: 2rem;
+  }
+
+  .popup-info {
+    font-size: 1.15rem;
+  }
+
+  .popup-detalhe {
+    font-size: 1rem;
+  }
+
+  .popup-preco {
+    font-size: 3.2rem;
+  }
+
+  .popup-inicio {
+    font-size: 1rem;
+  }
+
+  .popup-obs {
+    font-size: 0.95rem;
+  }
+}
+
+/* CELULAR */
+@media (max-width: 520px) {
+  .popup-overlay {
+    padding: 10px;
+  }
+
+  .popup-box {
+    border-radius: 18px;
+    max-height: 95vh;
+  }
+
+  .popup-close {
+    top: 10px;
+    right: 10px;
+    width: 38px;
+    height: 38px;
+    font-size: 24px;
+  }
+
+  .popup-imagem img {
+    height: 200px;
+  }
+
+  .popup-texto {
+    padding: 22px 16px 20px;
+  }
+
+  .popup-tag {
+    font-size: 0.78rem;
+    padding: 7px 12px;
+    margin-bottom: 12px;
+  }
+
+  .popup-texto h2 {
+    font-size: 1.65rem;
+    margin-bottom: 14px;
+  }
+
+  .popup-info {
+    font-size: 1rem;
+    margin-bottom: 8px;
+  }
+
+  .popup-detalhe {
+    font-size: 0.95rem;
+    margin-bottom: 18px;
+  }
+
+  .popup-preco {
+    font-size: 2.7rem;
+    margin-bottom: 14px;
+  }
+
+  .popup-inicio {
+    font-size: 0.95rem;
+  }
+
+  .popup-obs {
+    font-size: 0.88rem;
+  }
+
+  .popup-acoes {
+    margin-top: 20px;
+  }
+
+  .popup-btn-fechar {
+    width: 100%;
+    padding: 14px 18px;
+    font-size: 0.96rem;
+  }
+}
 /* =========================================================
    FAIXA DE INFORMAÇÕES (HORÁRIO + CARTÃO DE ENDEREÇO)
 ========================================================= */
